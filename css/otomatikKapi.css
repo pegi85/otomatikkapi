@@ -1,0 +1,258 @@
+/* /header style/ */
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: rgb(225, 226, 228);
+  height: 250px;
+  padding-top: 5px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 20;
+}
+
+#logoSmall {
+  width: 70%;
+  transition: 0.2s;
+}
+
+#logoBig {
+  width: 70%;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(144, 149, 161);
+  color: rgb(236, 59, 59);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.socialstyle {
+  font-size: 24px;
+}
+
+/* /style of social buttuons in footer/ */
+.socialstyleButtom {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.phonestyle {
+  color: rgb(236, 59, 59);
+  padding-right: 5px;
+  padding-left: 20px;
+  margin-top: 3px;
+}
+#sociality {
+}
+.linkcolor {
+  color: black;
+}
+
+/* /navbar style/ */
+#navi {
+  transition: 0.4s;
+  padding: 1px;
+  margin-top: 200px;
+  z-index: 20;
+}
+
+.navbar {
+  background-color: rgb(214, 21, 21);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 130px;
+}
+
+.navColor {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navColor:hover {
+  background-color: rgb(161, 73, 73);
+}
+
+/* background paralax style */
+.parallax {
+  /* The image used */
+  background-image: url(/assets/img/13.jpg);
+
+  /* Set a specific height */
+  min-height: 530px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#firstpage {
+  background-color: rgb(53, 52, 53);
+}
+
+/* / positioning everything under the header/ */
+
+.topstyle {
+  margin-top: 130px;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 80%;
+}
+
+.carousel {
+  margin-top: 1rem;
+}
+
+.whitefont {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr.color1 {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+hr.color2 {
+  border-top: 3px solid rgb(214, 21, 21);
+}
+
+#foot {
+  bottom: 0;
+
+  background-color: rgb(85, 79, 85);
+  height: auto;
+  padding-top: 15px;
+}
+
+/* slide sho part */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+  margin-left: 833px;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.picsize {
+  width: 292px;
+  padding-right: 10px;
+}
+
+.picsize:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+/* scrol up btn */
+#upBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(214, 21, 21);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#upBtn:hover {
+  background-color: rgb(202, 199, 199);
+  color: rgb(0, 0, 0);
+}
