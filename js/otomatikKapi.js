@@ -30,18 +30,20 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 // changing header size when scrolling . header and navigation fixed top when scrolling//
-window.onscroll = function() {
+window.onscroll = function () {
   scrollforchange();
   scrollUpButton();
 };
 
 function scrollforchange() {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document.getElementById("header").style.height = "130px";
-    document.getElementById("logoSmall").style.width = "50%";
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+
+    document.getElementById("logoSmall").style.width = "37%";
+
   } else {
-    document.getElementById("header").style.height = "250px";
-    document.getElementById("logoSmall").style.width = "70%";
+
+    document.getElementById("logoSmall").style.width = "60%";
+
   }
 }
 //Get the button
@@ -63,4 +65,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-f;
+function myFunction() {
+  var x = document.getElementById("navi");
+  if (x.className === "navbar") {
+    x.className = "navbar";
+  } else {
+    x.className += " responsive";
+  }
+}
