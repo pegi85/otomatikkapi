@@ -17,23 +17,19 @@ html {
   width: 100%;
   transition: 0.2s;
   z-index: 20;
-
 }
 
 #logoSmall {
-  width: 50%;
-  transition: 0.2s;
+  width: 36%;
   float: left;
-
 }
 
 #socialMedia {
-
   text-align: right;
 }
 
 #logoBig {
-  width: 70%;
+  width: 60%;
   transition: 0.2s;
 }
 
@@ -61,10 +57,10 @@ html {
   padding-right: 5px;
   padding-left: 20px;
   margin-top: 3px;
-
 }
 
-#sociality {}
+#sociality {
+}
 
 .linkcolor {
   color: black;
@@ -74,7 +70,6 @@ html {
 #navi {
   transition: 0.4s;
   padding: 1px;
-  margin-top: 200px;
   z-index: 20;
 }
 
@@ -98,8 +93,6 @@ html {
   color: rgb(255, 255, 255);
   padding-top: 5px;
   padding-bottom: 5px;
-
-
 }
 
 /* icons goes and navbar change  */
@@ -123,31 +116,55 @@ html {
   }
 
   .navbar.responsive a {
-
     display: block;
     text-align: left;
   }
 }
 
-/* background paralax style */
-.parallax {
-  /* The image used */
-  background-image: url(/assets/img/13.jpg);
-
-  /* Set a specific height */
+#parallax {
+  background-image: url(/assets/images/f1.jpg);
   min-height: 530px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100vh;
+  backface-visibility: hidden;
+  animation: slideBg 10s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url(/assets/images/p1.jpg);
+  }
+
+  25% {
+    background-image: url(/assets/images/p2.jpg);
+  }
+
+  50% {
+    background-image: url(/assets/images/p3.jpg);
+  }
+
+  75% {
+    background-image: url(/assets/images/p4.jpg);
+  }
+
+  100% {
+    background-image: url(/assets/images/p5.jpg);
+  }
 }
 
 #firstpage {
   background-color: rgb(53, 52, 53);
 }
-
+#c1 {
+  background-color: rgb(53, 52, 53);
+  padding-top: 50px;
+}
 /* / positioning everything under the header/ */
 
 .topstyle {
@@ -176,8 +193,6 @@ hr.color1 {
 hr.color2 {
   border-top: 3px solid rgb(214, 21, 21);
 }
-
-
 
 #foot {
   bottom: 0;
@@ -238,13 +253,10 @@ hr.color2 {
   }
 }
 
-
 .picsize {
   width: 32%;
   padding-right: 10px;
 }
-
-
 
 /* scrol up btn */
 #upBtn {

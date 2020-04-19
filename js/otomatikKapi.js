@@ -31,21 +31,11 @@ function showSlides(n) {
 }
 // changing header size when scrolling . header and navigation fixed top when scrolling//
 window.onscroll = function () {
-  scrollforchange();
+
   scrollUpButton();
 };
 
-function scrollforchange() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 
-    document.getElementById("logoSmall").style.width = "37%";
-
-  } else {
-
-    document.getElementById("logoSmall").style.width = "60%";
-
-  }
-}
 //Get the button
 var mybutton = document.getElementById("upBtn");
 
