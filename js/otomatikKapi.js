@@ -31,21 +31,21 @@ function showSlides(n) {
 }
 // changing header size when scrolling . header and navigation fixed top when scrolling//
 window.onscroll = function () {
-
   scrollUpButton();
 };
 
-
 //Get the button
 var mybutton = document.getElementById("upBtn");
-
+var scrollIcon = document.getElementById("scrollDown");
 // When the user scrolls down 20px from the top of the document, show the button
 
 function scrollUpButton() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     mybutton.style.display = "block";
+    scrollIcon.style.display = "none";
   } else {
     mybutton.style.display = "none";
+    scrollIcon.style.display = "block";
   }
 }
 
