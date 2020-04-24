@@ -29,8 +29,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+// get the second topbar
+var secondTopBar = document.getElementById("navi");
 // changing header size when scrolling . header and navigation fixed top when scrolling//
 window.onscroll = function () {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    secondTopBar.style.top = '0';
+  } else {
+    secondTopBar.style.top = '90px';
+  }
   scrollUpButton();
 };
 

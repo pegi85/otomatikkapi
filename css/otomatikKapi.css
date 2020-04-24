@@ -9,10 +9,10 @@ html {
 
 #header {
   background-color: rgb(255, 255, 255);
-  height: auto;
+  height: 90px;
   padding-top: 5px;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   transition: 0.2s;
@@ -20,7 +20,7 @@ html {
 }
 
 #logoSmall {
-  width: 36%;
+  width: 190px;
   float: left;
 }
 
