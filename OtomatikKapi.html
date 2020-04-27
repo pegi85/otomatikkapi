@@ -2,45 +2,75 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/otomatikKapi.css" />
 </head>
 
 <body>
-  <div id="header" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6 d-flex align-items-center">
-        <img id="logoSmall" class="img-fluid" src="./assets/img/logo21.png" alt="logo" />
-      </div>
-      <div id="socialMedia" class="col-sm-6 d-flex justify-content-center align-items-center">
-        <a href="https://api.whatsapp.com/send?phone=+905550262543"><button class="btn socialstyle">
-            <i class="fab fa-whatsapp"></i></button></a>
-        <a href="https://www.instagram.com/farzad_shafag/?hl=tr"><button class="btn socialstyle">
-            <i class="fab fa-instagram"></i></button></a>
+  <div class="head-section">
+    <div id="header" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 d-flex justify-content-center align-items-center">
+          <img id="logoSmall" class="img-fluid" src="./assets/img/logo21.png" alt="logo" />
+        </div>
+        <div id="socialMedia" class="col-sm-6 d-flex justify-content-center align-items-center">
+          <a href=" https://wa.me/905550262543"><button class="btn socialstyle">
+              <i class="fab fa-whatsapp"></i></button></a>
+          <a href="https://www.instagram.com/arasotomasiyon/?hl=tr"><button class="btn socialstyle">
+              <i class="fab fa-instagram"></i></button></a>
+
+          <br />
+          <i class="fa fa-phone phonestyle"></i>
+          <a class="linkcolor" href="tel://+905550262543">0555 026 25 43</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="navi" class="navbar navbar-expand-sm justify-content-center navbar-dark">
-    <a class="nav-link navColor" href="#"> <i class="fas fa-home"></i></a>
-    <a class="nav-link navColor" href="#firstpage">Anasayfa</a>
-    <a class="nav-link navColor" href="#urunler">Ürünler</a>
-    <a class="nav-link navColor" href="#c1">Biten Projeler</a>
-    <a class="nav-link navColor" href="#foot">İletişim</a>
-    <a href="#" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+    <nav id="navi" class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link navColor" href="#">
+              <i class="fas fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navColor" href="#firstpage">Anasayfa</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link navColor dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Ürünler
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="kepenek sıstemlerı.html">Kepenek Sistemleri</a>
+              <a class="dropdown-item" href="kollu bariyer.html">Kollu Bariyer</a>
+              <a class="dropdown-item" href="photoselli kapi.html">Photoselli Kapı</a>
+              <a class="dropdown-item" href="kayar kapi.html">Kayar Kapı</a>
+              <a class="dropdown-item" href="garage kapilari.html">Garage Kapıları</a>
+              <a class="dropdown-item" href="kanatli kapi otomasyonu.html">Kanatlı kapı Otomasyonu</a>
+            </div>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link navColor" href="biten.html" target="blank">Biten Projeler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navColor" href="#foot">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <button onclick="topFunction()" id="upBtn" title="Go to top">Top</button>
-  <i id="scrollDown" class="fa fa-angle-double-down"></i>
 
-  <div id="parallax">
-
-  </div>
+  <div id="parallax"></div>
   <div id="firstpage" class="container-fluid">
     <div class="row d-flex justify-content-center">
       <div class="col-sm-6 topstyle">
@@ -78,7 +108,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./assets/img/garag2.jpg" alt="New York" width="1100" height="500" />
+              <img src="./assets/images/unnamed.jpg" alt="New York" width="1100" height="500" />
               <div class="carousel-caption">
                 <h3>GARAGE KAPILARI</h3>
               </div>
@@ -115,194 +145,142 @@
         <hr class="color2" />
       </div>
     </div>
-  </div>
 
-  <div id="urunler" class="row d-flex justify-content-center">
-    <div class="col-sm-6">
-      <div class="whitefont topstyle">
-        <h3>KEPENEK SISTEMLERI</h3>
-        <hr class="color1" />
-        <p>
-          Özellikle iş yeri, mağaza ve dükkanların güvenliğini sağlamak
-          amacıyla kullanılan kepenk sistemleri günümüzde estetik amaçlı da
-          kullanılabilmektedir. Farklı mimari detaylarla uyumlu olarak
-          kullanılan kepenkler motorlu ve uzaktan kumandalı olabilmekte ve
-          kullanıcılara kolaylık sağlamaktadır. Kepenk mini pencereli modeli
-          ile güvenlik görevini yaparken vitrininiz de rahatlıkla
-          izlenebilmektedir.
-        </p>
-        <p>
-          Kepenk sistemleri uygulanacak alana uygun olarak farklı yükseklik
-          ve şekle sahip kepenk profilleri kullanılarak hem güvenlik hem de
-          estetik ön planda tutularak çağdaş çözümler üretilebilir. İçi
-          poliüretan dolgulu alüminyum panellerin yanı sıra endüstriyel tip,
-          içi boş, ekztrüzyon profiller ve galvaniz profiller de
-          kullanılabilir.
-        </p>
-        <hr class="color1" />
-      </div>
-    </div>
-    <div class="col-sm-3 d-flex align-items-center">
-      <img class="smallpic topstyle" src="./assets/img/kepenek2.jpg" alt="kepenek" />
-    </div>
-  </div>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>KEPENEK SISTEMLERI</h5>
+          <hr class="color1" />
+          <p>
+            Özellikle iş yeri, mağaza ve dükkanların güvenliğini sağlamak
+            amacıyla kullanılan kepenk sistemleri günümüzde estetik amaçlı da
+          </p>
+          <a href="/kepenek sıstemlerı.html">Devamini oku</a>
 
-
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-6">
-      <div class="whitefont topstyle">
-        <h3>KOLLU BARIYER</h3>
-        <hr class="color1" />
-        <p>
-          Kollu bariyerler özellikle toplu konut, otopark, endistriyel tesis
-          girişleri ve buna benzer birçok alanın girişleri için kullanılan
-          bir bariyerdir. Farklı uygulamalarınıza birden fazla çeşidiyle
-          cevap verebilen bu ürünler kolay montajlanabilme özelliğine
-          sahiptir. Ürünler 2-8 saniye arasında açılabilmektedir ve kişisel
-          anahtar siste mi de mevcuttur. Ayrıca üretilen bu ürünler termal
-          koruma özelliğine de sahiptir.
-        </p>
-
-        <hr class="color1" />
-      </div>
-    </div>
-    <div class="col-sm-3 d-flex align-items-center">
-      <img class="smallpic topstyle" src="/assets/img/20.jpg" alt="kollu barier" />
-    </div>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-6">
-      <div class="whitefont topstyle">
-        <h3>PHOTOSELLI KAPI</h3>
-        <hr class="color1" />
-        <p>
-          Hem endüstriyel hem de konut tipi mekânlara hitap edebilen
-          fotoselli kapı mekanizması görsellikle bütünleştirilerek
-          üretilmiştir. Kaliteli üretimiyle uzun yıllar kullanabileceğiniz
-          bu fotoselli kapılar evlerinizin ve iş yerlerinizin kullanımında
-          sizlere sağlamlığının yanında estetik bir görünümü de
-          kazandıracak. Ürünü diğer firmaların ürünleriyle kıyaslayarak en
-          kolay şekilde kalitesini anlayabilirsiniz. Mekânlarınızın farkını
-          bu ürünler ile ortaya çıkarabilirsiniz.
-        </p>
-
-        <hr class="color1" />
-      </div>
-    </div>
-    <div class="col-sm-3 d-flex align-items-center">
-      <img class="smallpic topstyle" src="/assets/img/photosel.jpg" alt="photoselli kapi" />
-    </div>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-6">
-      <div class="whitefont topstyle">
-        <h3>KAYAR KAPI</h3>
-        <hr class="color1" />
-        <p>
-          Genelde güvenlik ve kullanım kolaylığı sebebiyle tercih edilen
-          kapılardır. Uygulanan otomasyondaki uzaktan kumanda sistemi
-          sayesinde kullanıcılar, bahçe giriş kapılarını, evlerinden
-          çıkmadan veya araçlarından inmeden soğuk, yağmur, kar, çamur,
-          rüzgar vb. gibi dış etkenlerden etkilenmeden güvenle ve kontrollü
-          bir şekilde açıp kapatabilirler. Uzaktan kumanda el vericisi
-          çoğaltılabilir. Kayar kapılara uygulanan motorlar kapı açıklığına,
-          kapı ağırlığına göre seçilir ve uygulanır.
-        </p>
-
-        <hr class="color1" />
-      </div>
-    </div>
-    <div class="col-sm-3 d-flex align-items-center">
-      <img class="smallpic topstyle" src="/assets/img/kayar3.jpg" alt="kayar" />
-    </div>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-6">
-      <div class="whitefont topstyle">
-        <h3>GARAGE KAPILARI</h3>
-        <hr class="color1" />
-        <p>
-          Güvenlik ve estetiği aynı anda sunulabilen seksiyonel garaj
-          kapıları, içi poliüretan dolgulu çelik kaplı panelleri ile güvenli
-          ve uzun ömürlüdür. Çeşitli mimari tasarımlara uygun olarak
-          geliştirilen yataklama sistemeri ile esnek bir uygulama alanına
-          sahiptir. Araç sahiplerine konfor sağlayan bir uygulamadır. Bu
-          kapılara uygulanabilen otomasyon sistemleri sayesinde araç sahibi;
-          yağmur, çamur, soğuk, sıcak gibi etkilere maruz kalmadan garajına
-          girebilmektedir. Panel ve motor seçenekleri sayesinde, geniş bir
-          kullanım alanına sahiptir. Kullanıldığı ortamlarda ısı, ses ve toz
-          yalıtımı sağladığı için tercih edilir.
-        </p>
-
-        <hr class="color1" />
-      </div>
-    </div>
-    <div class="col-sm-3 d-flex align-items-center">
-      <img class="smallpic topstyle" src="/assets/img/garag1.jpg" alt="kepenek" />
-    </div>
-  </div>
-  <br />
-  </div>
-  <div id="parallax">
-  </div>
-  <div id="c1" class="container-fluid">
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-9 ">
-        <h1 class="whitefont">Biten Projelerimiz</h1>
-        <br />
-        <div class="slideshow-container ">
-          <div class="mySlides  ">
-            <img class="picsize" src="./assets/img/10.jpg" />
-            <img class="picsize" src="./assets/img/02.jpg" />
-            <img class="picsize" src="./assets/img/03.jpg" />
-          </div>
-          <div class="mySlides">
-            <img class="picsize" src="./assets/img/04.jpg" />
-            <img class="picsize" src="./assets/img/05.jpg" />
-            <img class="picsize" src="./assets/img/06.jpg" />
-          </div>
-          <div class="mySlides">
-            <img class="picsize" src="./assets/img/07.jpg" />
-            <img class="picsize" src="./assets/img/08.jpg" />
-            <img class="picsize" src="./assets/img/09.jpg" />
-          </div>
-          <div class="mySlides">
-            <img class="picsize" src="./assets/img/10.jpg" />
-            <img class="picsize" src="./assets/img/02.jpg" />
-            <img class="picsize" src="./assets/img/03.jpg" />
-          </div>
-
-          <br />
-          <br />
-          <div class="d-flex justify-content-center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-          </div>
-          <br />
+          <hr class="color1" />
         </div>
       </div>
+      <div class="col-sm-2">
+        <img class="smallpic topstyle" src="./assets/img/kepenek2.jpg" alt="kepenek" />
+      </div>
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>KOLLU BARIYER</h5>
+          <hr class="color1" />
+          <p>
+            Kollu bariyerler özellikle toplu konut, otopark, endistriyel tesis
+            girişleri ve buna benzer birçok alanın girişleri için kullanılan
+          </p>
+          <a href="/kollu bariyer.html">Devamini oku</a>
+
+          <hr class="color1" />
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <img class="smallpic topstyle" src="/assets/img/20.jpg" alt="kollu barier" />
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>PHOTOSELLI KAPI</h5>
+          <hr class="color1" />
+          <p>
+            Hem endüstriyel hem de konut tipi mekânlara hitap edebilen
+            fotoselli kapı mekanizması görsellikle bütünleştirilerek
+          </p>
+          <a href="/photoselli kapi.html">Devamini oku</a>
+          <hr class="color1" />
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex align-items-center">
+        <img class="smallpic topstyle" src="/assets/img/photosel.jpg" alt="photoselli kapi" />
+      </div>
+
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>KAYAR KAPI</h5>
+          <hr class="color1" />
+          <p>
+            Genelde güvenlik ve kullanım kolaylığı sebebiyle tercih edilen
+            kapılardır. Uygulanan otomasyondaki uzaktan kumanda sistemi
+          </p>
+          <a href="/kayar kapi.html">Devamini oku</a>
+
+          <hr class="color1" />
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex align-items-center">
+        <img class="smallpic topstyle" src="/assets/img/kayar3.jpg" alt="kayar" />
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>KANATLI KAPI OTOMASYONU</h5>
+          <hr class="color1" />
+          <p>
+            Dairesel Bahçe Kapıları olarak da adlandırılan bu kapılar,
+            özellikle müstakil konutların bahçe girişlerinde, fabrika, depo
+            gibi işletmelerin ana
+          </p>
+          <a href="/kayar kapi.html">Devamini oku</a>
+
+          <hr class="color1" />
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex align-items-center">
+        <img class="smallpic topstyle" src="/assets/img/garag2.jpg" alt="kepenek" />
+      </div>
+
+      <div class="col-sm-3">
+        <div class="whitefont topstyle">
+          <h5>GARAGE KAPILARI</h5>
+          <hr class="color1" />
+          <p>
+            Güvenlik ve estetiği aynı anda sunulabilen seksiyonel garaj
+            kapıları, içi poliüretan dolgulu çelik kaplı panelleri ile güvenli
+            ve
+          </p>
+          <a href="/kayar kapi.html">Devamini oku</a>
+
+          <hr class="color1" />
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex align-items-center">
+        <img class="smallpic topstyle" src="/assets/img/garag1.jpg" alt="kepenek" />
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="contain">
+    <img src="/assets/images/proje2.jpg" class="responsive" style="width: 100%;" />
+
+    <div class="bg-text">
+      <a href="biten.html" title="Biten Projeleri Gor ">
+        <h4>Projeler</h4>
+      </a>
+
     </div>
   </div>
+
+
   <div id="foot" class="container-fluid">
     <div class="row d-flex justify-content-center">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <div class="whitefont mt-3">
           <p>BİZE ULAŞIN</p>
           <p>
-            A : Menderes Mahallesi Cengiz Topel Caddesi No: 1/13-C
-            Sincan/ANKARA
+            ADRES :Eryaman Mahallesi - Etimesgut - No:9 - Çankaya/ANKARA
           </p>
+          <p>İLETİŞİM : 0312 511 00 79</p>
           <hr class="color1" />
           <div class="row d-flex justify-content-center">
-            <a href="https://api.whatsapp.com/send?phone=+905550262543"><button class="btn socialstyleButtom">
+            <a href=" https://wa.me/905550262543"><button class="btn socialstyleButtom">
                 <i class="fab fa-whatsapp"></i></button></a>
-            <a href="https://www.instagram.com/farzad_shafag/?hl=tr"><button class="btn socialstyleButtom">
+            <a href="https://www.instagram.com/arasotomasiyon/?hl=tr"><button class="btn socialstyleButtom">
                 <i class="fab fa-instagram"></i></button></a>
-            <button class="btn socialstyleButtom">
-              <i class="far fa-envelope"></i>
-            </button>
           </div>
         </div>
       </div>
