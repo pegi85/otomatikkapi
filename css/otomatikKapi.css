@@ -101,7 +101,7 @@ html {
 }
 
 #parallax {
-  background-image: url('./assets/images/f1.jpg');
+  background-image: url('../assets/images/f1.jpg');
   min-height: 530px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -117,20 +117,20 @@ html {
 
 @keyframes slideBg {
   0% {
-    background-image: url('./assets/images/p1.jpg');
+    background-image: url('../assets/images/p1.jpg');
   }
 
   40% {
-    background-image: url('./assets/images/p2.jpg');
+    background-image: url('../assets/images/p2.jpg');
   }
 
 
   80% {
-    background-image: url('./assets/images/p4.jpg');
+    background-image: url('../assets/images/p4.jpg');
   }
 
   100% {
-    background-image: url('./assets/images/p1.jpg');
+    background-image: url('../assets/images/p1.jpg');
   }
 
 }
@@ -143,6 +143,7 @@ html {
   background-color: rgb(53, 52, 53);
   padding-top: 70px;
   padding-bottom: 70px;
+
 }
 
 .biten {
@@ -169,6 +170,7 @@ html {
 .whitefont {
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
