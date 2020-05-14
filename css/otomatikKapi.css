@@ -101,7 +101,6 @@ html {
 }
 
 #parallax {
-  background-image: url('../assets/images/f1.jpg');
   min-height: 530px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
