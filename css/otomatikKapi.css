@@ -139,7 +139,7 @@ display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width:auto;
   height: 100vh;
   backface-visibility: hidden;
   animation: slideBg 12s linear infinite 0s;
