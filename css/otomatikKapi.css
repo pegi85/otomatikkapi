@@ -17,6 +17,21 @@ html {
   width: 100%;
   transition: 0.2s;
   z-index: 20;
+  display: block;
+}
+
+#header-mob{
+  background-color: rgb(255, 255, 255);
+  padding-top: 5px;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 20;
+  display: none;
+}
+
+i.fa{
+  font-family: fontawsome !important;
 }
 
 #logoSmall {
@@ -57,6 +72,7 @@ html {
   padding-right: 5px;
   padding-left: 20px;
   margin-top: 3px;
+  font-size: 24px;
 }
 
 
@@ -69,6 +85,16 @@ html {
   position: fixed;
   width: 100%;
   z-index: 1000;
+}
+
+
+@media only screen and (max-width: 760px) {
+  #header {
+    display: none;
+  }
+  #header-mob{
+display: block;
+  }
 }
 
 
