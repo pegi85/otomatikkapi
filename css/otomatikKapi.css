@@ -98,9 +98,12 @@ display: block;
   #parallax{
     display: none;
   }
-  .parallaxmob{
-    display: block;
-  }
+  
+#firstpage {
+  
+  margin-top: 100px;
+}
+  
 }
 
 
@@ -132,14 +135,7 @@ display: block;
   padding-bottom: 5px;
 }
 
-.parallaxmob{
-        display: none;
-  }
 
-.mobile{
-  width: 100%;
-  height: auto;
-}
 
 #parallax {
   min-height: 600px;
@@ -178,6 +174,7 @@ display: block;
 
 #firstpage {
   background-color: rgb(53, 52, 53);
+  
 }
 
 .urunler {
@@ -198,6 +195,9 @@ display: block;
 
 
 }
+
+
+
 
 /* / positioning everything under the header/ */
 
