@@ -99,11 +99,6 @@ display: block;
     display: none;
   }
   
-#firstpage {
-  
-  margin-top: 100px;
-}
-  
 }
 
 
@@ -136,6 +131,11 @@ display: block;
 }
 
 
+
+.mobile{
+  width: 100%;
+  height: auto;
+}
 
 #parallax {
   min-height: 600px;
@@ -174,7 +174,6 @@ display: block;
 
 #firstpage {
   background-color: rgb(53, 52, 53);
-  
 }
 
 .urunler {
@@ -195,9 +194,6 @@ display: block;
 
 
 }
-
-
-
 
 /* / positioning everything under the header/ */
 
