@@ -136,7 +136,10 @@ display: block;
         display: none;
   }
 
-
+.mobile{
+  width: 100%;
+  height: auto;
+}
 
 #parallax {
   min-height: 600px;
