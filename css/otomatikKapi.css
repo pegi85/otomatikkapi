@@ -98,7 +98,7 @@ display: block;
   #parallax{
     display: none;
   }
-  #parallaxmob{
+  .parallaxmob{
     display: block;
   }
 }
@@ -133,13 +133,8 @@ display: block;
 }
 
 .parallaxmob{
-  width: auto;
- height: auto;
-  
-  padding-top: 50px;
-  
-  
-}
+        display: none;
+  }
 
 
 
@@ -155,6 +150,7 @@ display: block;
   backface-visibility: hidden;
   animation: slideBg 12s linear infinite 0s;
   animation-timing-function: ease-in-out;
+  
 }
 
 @keyframes slideBg {
