@@ -133,17 +133,12 @@ display: block;
 }
 
 #parallaxmob{
-  min-height: auto;
-  /* Create the parallax scrolling effect */
+  background-image: url('../assets/img/p1-1.jpg');
+  min-height: 740px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width:auto;
-  height: 100vh;
-  backface-visibility: hidden;
-  animation: slideBg 12s linear infinite 0s;
-  animation-timing-function: ease-in-out;
 }
 
 
