@@ -98,9 +98,10 @@ display: block;
   #parallax{
     display: none;
   }
-  .mobile{
-    display: block;
+  .parallaxMob {
+    display: block !important;
   }
+  
 }
 
 
@@ -133,9 +134,20 @@ display: block;
 }
 
 
-.mobile{
-  width: 100%;
-  height: auto;
+
+
+.parallaxMob {
+  /* The image used */
+  background-image: url("../assets/img/pmob.jpg");
+
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: none;
 }
 
@@ -176,6 +188,7 @@ display: block;
 
 #firstpage {
   background-color: rgb(53, 52, 53);
+  
 }
 
 .urunler {
