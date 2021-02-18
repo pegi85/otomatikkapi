@@ -98,7 +98,7 @@ display: block;
   #parallax{
     display: none;
   }
-  .parallaxMob {
+  #imgMob{
     display: block !important;
   }
   
@@ -136,20 +136,8 @@ display: block;
 
 
 
-.parallaxMob {
-  /* The image used */
-  background-image: url("../assets/img/pmob.jpg");
-
-  /* Set a specific height */
-  min-height: 650px; 
-  width: 100%;
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: none;
+#imgMob {
+    display: none;
 }
 
 #parallax {
