@@ -142,7 +142,7 @@ display: block;
 
   /* Set a specific height */
   min-height: 650px; 
-
+width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
