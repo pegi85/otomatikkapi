@@ -35,10 +35,13 @@ i.fa{
 }
 
 #logoSmall {
-  width: 190px;
+  width: 130px;
   float: left;
 }
 
+#logoMob{
+  width: 60%;
+}
 #socialMedia {
   text-align: right;
 }
@@ -79,6 +82,7 @@ i.fa{
 
 .linkcolor {
   color: black;
+  padding: 5px;
 }
 
 .head-section {
@@ -161,19 +165,24 @@ display: block;
     background-image: url('../assets/images/p1.jpg');
   }
 
-  40% {
+  20% {
     background-image: url('../assets/images/p2.jpg');
   }
 
 
-  80% {
+  40% {
     background-image: url('../assets/images/p4.jpg');
   }
 
+  60% {
+    background-image: url('../assets/images/p1.jpg');
+  }
+  80% {
+    background-image: url('../assets/img/04-1.jpg');
+  }
   100% {
     background-image: url('../assets/images/p1.jpg');
   }
-
 }
 
 #firstpage {
