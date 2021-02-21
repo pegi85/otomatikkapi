@@ -138,6 +138,7 @@ display: block;
 
 #imgMob {
     display: none;
+    width: 100%;
 }
 
 #parallax {
