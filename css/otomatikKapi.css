@@ -82,7 +82,7 @@ i.fa{
 
 .linkcolor {
   color: black;
-  padding: 5px;
+  padding: 2px;
 }
 
 .head-section {
@@ -164,20 +164,13 @@ display: block;
   0% {
     background-image: url('../assets/images/p1.jpg');
   }
-
-  20% {
+  25% {
     background-image: url('../assets/images/p2.jpg');
   }
-
-
-  40% {
+  50% {
     background-image: url('../assets/images/p4.jpg');
   }
-
-  60% {
-    background-image: url('../assets/images/p1.jpg');
-  }
-  80% {
+    75% {
     background-image: url('../assets/img/04-1.jpg');
   }
   100% {
